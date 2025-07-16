@@ -28,8 +28,8 @@ struct StudyCorner: View {
                                 .fontWeight(.bold)
                                 .padding(.vertical, 5.0)
                                 .padding(.horizontal, 10)
-                                .background(Color.blue)
-                                .foregroundColor(Color.white)
+                                .background(Color.blue.opacity(0.2))
+                                .foregroundColor(Color.blue)
                                 .cornerRadius(30)
                             
                         }
@@ -57,8 +57,8 @@ struct StudyCorner: View {
                             .fontWeight(.bold)
                             .padding(.horizontal, 80)
                             .padding(.vertical, 15)
-                            .background(Color.blue)
-                            .foregroundColor(Color.white)
+                            .background(Color.blue.opacity(0.2))
+                            .foregroundColor(Color.blue)
                             .cornerRadius(30)
                     }
                     
@@ -68,8 +68,8 @@ struct StudyCorner: View {
                             .fontWeight(.bold)
                             .padding(.horizontal, 90)
                             .padding(.vertical, 15)
-                            .background(Color.blue)
-                            .foregroundColor(Color.white)
+                            .background(Color.blue.opacity(0.2))
+                            .foregroundColor(Color.blue)
                             .cornerRadius(30)
                     }
                     
@@ -82,8 +82,8 @@ struct StudyCorner: View {
                             .fontWeight(.bold)
                             .padding(.horizontal, 80)
                             .padding(.vertical, 15)
-                            .background(Color.purple)
-                            .foregroundColor(Color.white)
+                            .background(Color.purple.opacity(0.2))
+                            .foregroundColor(Color.purple)
                             .cornerRadius(30)
                     }
                     

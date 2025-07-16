@@ -28,8 +28,8 @@ struct Resources: View {
                                 .fontWeight(.bold)
                                 .padding(.vertical, 5.0)
                                 .padding(.horizontal, 10)
-                                .background(Color.blue)
-                                .foregroundColor(Color.white)
+                                .background(Color.blue.opacity(0.2))
+                                .foregroundColor(Color.blue)
                                 .cornerRadius(30)
                             
                         }
