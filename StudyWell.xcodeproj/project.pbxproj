@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1C5C82102E27E84900552A0C /* QuickTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5C820F2E27E84900552A0C /* QuickTimer.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1C5C81EB2E26A51300552A0C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		1C5C81DC2E26A50E00552A0C /* StudyWell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyWell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C5C81EA2E26A51300552A0C /* StudyWellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyWellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C5C81F42E26A51300552A0C /* StudyWellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyWellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C5C820F2E27E84900552A0C /* QuickTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +80,7 @@
 		1C5C81D32E26A50E00552A0C = {
 			isa = PBXGroup;
 			children = (
+				1C5C820F2E27E84900552A0C /* QuickTimer.swift */,
 				1C5C81DE2E26A50E00552A0C /* StudyWell */,
 				1C5C81ED2E26A51300552A0C /* StudyWellTests */,
 				1C5C81F72E26A51300552A0C /* StudyWellUITests */,
@@ -236,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C5C82102E27E84900552A0C /* QuickTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
