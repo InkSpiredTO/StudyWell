@@ -8,14 +8,14 @@
 import SwiftUI
 
 
-struct StudyCorner: View {
+struct Resources: View {
     
     var body: some View {
         NavigationStack {
                 VStack {
                     HStack  {
                         
-                        Text("Study Corner")
+                        Text("Study Corner!")
                             .font(.system(size: 40))
                         
                         Spacer()
@@ -41,51 +41,18 @@ struct StudyCorner: View {
                     Divider()
                         .overlay(Color.black)
                     
-
-                        Text("Welcome to Study Corner!")
+                        
+                        Text("Welcome to Study Corner Resources!")
                             .font(.system(size: 20))
                             .multilineTextAlignment(.center)
                             .padding(.vertical)
                     
                     Text("Select One:")
                         .fontWeight(.bold)
+                        .padding(.bottom)
                         .font(.system(size: 20))
                     
-                    NavigationLink(destination: QuickTimer()) {
-                        Text("Quick Timer")
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .padding(.horizontal, 80)
-                            .padding(.vertical, 15)
-                            .background(Color.blue)
-                            .foregroundColor(Color.white)
-                            .cornerRadius(30)
-                    }
-                    
-                    NavigationLink(destination: Pomodoro()) {
-                        Text("Pomodoro")
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .padding(.horizontal, 90)
-                            .padding(.vertical, 15)
-                            .background(Color.blue)
-                            .foregroundColor(Color.white)
-                            .cornerRadius(30)
-                    }
-                    
-                    
                     Spacer()
-                    
-                    NavigationLink(destination: Resources()) {
-                        Text("Resources")
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .padding(.horizontal, 80)
-                            .padding(.vertical, 15)
-                            .background(Color.purple)
-                            .foregroundColor(Color.white)
-                            .cornerRadius(30)
-                    }
                     
                 }
                 
