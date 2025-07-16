@@ -7,7 +7,7 @@ final class TaskItem: Identifiable {
     var content: String
     var timestamp: Date
     var isCompleted: Bool
-    var isActive = true // Used for animate-able deletion
+    var isActive = true
     
     init(content: String, timestamp: Date, isCompleted: Bool = false) {
         self.content = content
@@ -17,7 +17,7 @@ final class TaskItem: Identifiable {
 }
 
 struct ContentView: View {
-  
+    
     @State private var currentQuote = "Tap 'New Quote' for inspiration!"
     @State private var newTask = ""
     @State private var showDeleteAlert = false
