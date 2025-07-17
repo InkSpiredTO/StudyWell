@@ -62,10 +62,10 @@ struct Resources: View {
                             }
                             .padding(.vertical)
                             
-                            GroupBox(label: Text("Kahn Academy").bold().font(.system(size: 25))) {
+                            GroupBox(label: Text("Khan Academy").bold().font(.system(size: 25))) {
                                 
                                 Link(destination: URL(string: "https://www.khanacademy.org/")!) {
-                                    Image("KahnAcademy")
+                                    Image("KhanAcademy")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
                                         .cornerRadius(15)
@@ -73,7 +73,7 @@ struct Resources: View {
                                 }
                                 
                                 DisclosureGroup {
-                                    Text("Kahn Academy is an educational site where: 'Students practice at their own pace' and 'accelerate their learning.'. Kahn Academy provides courses from math, to science, to english, and so much more.")
+                                    Text("Khan Academy is an educational site where: 'Students practice at their own pace' and 'accelerate their learning.'. Kahn Academy provides courses from math, to science, to english, and so much more.")
                                         .padding(.all)
                                 } label: {
                                     Text("About")
