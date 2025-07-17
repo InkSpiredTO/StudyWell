@@ -25,9 +25,8 @@ struct WellnessPage: View {
         VStack {
             VStack(){
                 HStack {
-                    Text("Wellness")
+                    Text("🧘 Wellness")
                         .font(.system(size: 40))
-                        .fontWeight(.black)
                         .padding()
                     
                     
