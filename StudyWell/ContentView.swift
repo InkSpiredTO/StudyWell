@@ -31,6 +31,7 @@ struct ContentView: View {
         "It is not whether you get knocked down, it is whether you get up.",
         "The only way to do great work is to love what you do.",
         "What we achieve inwardly will change outer reality.",
+        "Keep studing! You can do it.",
         "Keep your face towards the sunshine and shadows will fall behind you."
     ]
     
@@ -98,14 +99,14 @@ struct ContentView: View {
     private func navigationButtons() -> some View {
         HStack(spacing: 16) {
             NavigationLink {
-                StudyCornerView()
+                StudyCorner()
             } label: {
                 Text("Study Corner")
                     .frame(maxWidth: .infinity)
             }
             
             NavigationLink {
-                WellnessCornerView()
+                WellnessPage()
             } label: {
                 Text("Wellness Corner")
                     .frame(maxWidth: .infinity)
