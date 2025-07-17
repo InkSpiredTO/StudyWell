@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct StudyCorner: View {
     
     var body: some View {
@@ -20,19 +19,6 @@ struct StudyCorner: View {
                         
                         Spacer()
                         
-                        Button {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                        } label: {
-                            Text("+")
-                                .font(.title)
-                                .fontWeight(.bold)
-                                .padding(.vertical, 5.0)
-                                .padding(.horizontal, 10)
-                                .background(Color.blue.opacity(0.2))
-                                .foregroundColor(Color.blue)
-                                .cornerRadius(30)
-                            
-                        }
                     }
                     .padding(.top)
                     .padding(.bottom, 10.0)
@@ -62,11 +48,11 @@ struct StudyCorner: View {
                             .cornerRadius(30)
                     }
                     
-                    NavigationLink(destination: Pomodoro()) {
-                        Text("Pomodoro")
+                    NavigationLink(destination: Notes()) {
+                        Text("Notes")
                             .font(.title)
                             .fontWeight(.bold)
-                            .padding(.horizontal, 90)
+                            .padding(.horizontal, 120)
                             .padding(.vertical, 15)
                             .background(Color.blue.opacity(0.2))
                             .foregroundColor(Color.blue)
