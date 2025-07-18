@@ -17,43 +17,35 @@ struct QuickTimer: View {
     let step = 1
     let range = 1...120
     
+    
     var body: some View {
-        NavigationStack {
+        let lightPink = Color(red: 1.0, green: 0.95, blue: 0.95)
+        
+        ZStack {
+            lightPink.ignoresSafeArea()
+            NavigationStack {
                 VStack {
                     HStack  {
                         
-                        Text("Study Well!")
+                        Text("⏲️ Quick Timer")
                             .font(.system(size: 40))
                         
                         Spacer()
                         
-                        Button {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                        } label: {
-                            Text("+")
-                                .font(.title)
-                                .fontWeight(.bold)
-                                .padding(.vertical, 5.0)
-                                .padding(.horizontal, 10)
-                                .background(Color.blue.opacity(0.2))
-                                .foregroundColor(Color.blue)
-                                .cornerRadius(30)
-                            
-                        }
                     }
                     .padding(.top)
                     .padding(.bottom, 10.0)
                     .padding(.horizontal)
                     
-                    Divider()
-                        .overlay(Color.black)
-                                            
-                        Text("Welcome to Study Corner Quick Timer!")
-                            .font(.system(size: 20))
-                            .multilineTextAlignment(.center)
-                            
-                            .padding(.vertical)
-                            .onReceive(timer) { _ in
+
+                    
+                    Text("Welcome to Study Corner Quick Timer!")
+                        .font(.system(size: 20))
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color(hue: 0.908, saturation: 0.675, brightness: 0.899))
+                    
+                        .padding(.vertical)
+                        .onReceive(timer) { _ in
                             print("Signal Recived")
                             if timeRemaining > 0 {
                                 if TimerOn == 1 {
@@ -67,14 +59,15 @@ struct QuickTimer: View {
                         }
                     
                     Stepper (
-                                value: $timeRemaining,
-                                in: range,
-                                step: step
-                            ) {
-                                Text("Time remaining:  \(timeRemaining) sec")
-                            }
-                            .padding(.horizontal, 50)
-                            .padding(.vertical, 20)
+                        value: $timeRemaining,
+                        in: range,
+                        step: step
+                    ) {
+                        Text("Time remaining:  \(timeRemaining) sec")
+                            .foregroundColor(Color(hue: 0.321, saturation: 0.665, brightness: 0.665))
+                    }
+                    .padding(.horizontal, 50)
+                    .padding(.vertical, 20)
                     
                     Button {
                         if TimerOn == 0 {
@@ -92,8 +85,8 @@ struct QuickTimer: View {
                             .fontWeight(.bold)
                             .padding(.horizontal, 90)
                             .padding(.vertical, 15)
-                            .background(Color.blue.opacity(0.2))
-                            .foregroundColor(Color.blue)
+                            .foregroundColor(Color(hue: 0.908, saturation: 0.675, brightness: 0.899))
+                            .background(Color(hue: 0.937, saturation: 0.136, brightness: 1.0))
                             .cornerRadius(30)
                     }
                     
@@ -106,6 +99,7 @@ struct QuickTimer: View {
         }
         
     }
+}
 
 #Preview {
     StudyCorner()
