@@ -43,8 +43,8 @@ struct QuickTimer: View {
                         .font(.system(size: 20))
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color(hue: 0.908, saturation: 0.675, brightness: 0.899))
-                    
                         .padding(.vertical)
+                    
                         .onReceive(timer) { _ in
                             print("Signal Recived")
                             if timeRemaining > 0 {
